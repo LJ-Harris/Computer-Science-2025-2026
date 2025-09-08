@@ -1,0 +1,8 @@
+#LJ Harris
+#4/9 (silksong is out today :D)
+import time
+
+celcius = float(input("Enter the Celcius/Centigrade value -->:   "))
+farenheit = 9/5 * celcius + 32
+time.sleep(0.2)
+print(celcius, "degrees in celcius is the same as", farenheit, "degrees in farenheit")
