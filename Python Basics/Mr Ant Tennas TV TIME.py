@@ -130,5 +130,6 @@ def quizBasic():
     else:
         print("Goodbye!")
     
+# To remove the bells&whistles at the start, delete line 134
 quizExtra()
 quizBasic()
