@@ -20,6 +20,7 @@ def quizExtra():
     print("questions, and you must answer correctly")
     print("for at least THREE to win!")
     time.sleep(1.5)
+    # Just some simple fun stuff to make the program feel more alive/energetic
     
 def quizBasic():
     score = 0
@@ -35,6 +36,7 @@ def quizBasic():
     if user.lower() == "a":
         print("Correct!")
         score = score + 1
+        # records what questions you get right
     else:
         print("Incorrect :(")
     print(" ")
@@ -42,8 +44,9 @@ def quizBasic():
     print("[[ according to https://en.wikipedia.org/wiki/Amazon_rainforest ]] !!")
     print("Now, onto question 2")
     print(" ")
-    
-    #question 2
+    # checks if you answered with the correct letter in the shell, line 34 'answer1 = "a" ' is junk code now as I don't actually need a variable to check for the right answer
+   
+   #question 2
     print("What is the country that is also known as Holland?")
     print(" ")
     print("Is it A: Amsterdam?")
@@ -118,18 +121,20 @@ def quizBasic():
     print(" ")
     
     if score >= 3:
-        print("Congratulations! You won with a score of:", score, "WOW!!")
+        print("Congratulations! You won with a score of:", score, "out of 5, WOW!!")
         print("Would you like to try again to better that score? Or just to show off your geographical prowess?")
-        
+        # this will happen if you win/pass
     else:
         print("Uh oh.. not quite a victory for this daring contestant!! Dont fret however, we're here ALL night! Would you like to try again?")
     print("(type yes if you would like to play again, or no if you dont. It's fine I'm not going to me upset if you say no I promise...)")
     retry = input(" ")
+    # this will happen if you dont
     if retry.lower() == "yes":
               quizBasic()
     else:
         print("Goodbye!")
-    
-# To remove the bells&whistles at the start, delete line 134
+    # a simple check if the player wants to take the quiz again
+
+# To remove the bells&whistles at the start, delete line 134 'quizExtra()'
 quizExtra()
 quizBasic()
